@@ -1,0 +1,32 @@
+@media (min-width:0px){
+    .wrap{
+        margin: 0 auto;
+    }
+    @for $i from 1 through 10 {
+        @for $x from 1 through 10 {
+            .wrap-#{$i}-#{$x}{
+                margin: $i + vh $x + vw;
+            }
+        }
+        
+    }
+}
+@media (min-width:576px){
+    
+}
+@media (min-width:768px){
+    
+}
+@media (min-width:992px){
+    @for $i from 1 through 10 {
+        @for $x from 1 through 10 {
+            .wrap-#{$i}-#{$x}{
+                margin: ($i*.8) + vh ($x*.8) + vw;
+            }
+        }
+        
+    }
+}
+@media (min-width:1200px){
+    
+}

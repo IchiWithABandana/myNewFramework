@@ -1,0 +1,105 @@
+@media (min-width: 0px) {
+  .g1 {
+    width: 50%;
+  }
+  .g2 {
+    width: 100%;
+  }
+  .g3 {
+    width: 100%;
+  }
+  .g4 {
+    width: 100%;
+  }
+  .g5 {
+    width: 100%;
+  }
+  .g6 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .g1 {
+    width: 33.33333%;
+  }
+  .g2 {
+    width: 66.66667%;
+  }
+  .g3 {
+    width: 100%;
+  }
+  .g4 {
+    width: 100%;
+  }
+  .g5 {
+    width: 100%;
+  }
+  .g6 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .g1 {
+    width: 25%;
+  }
+  .g2 {
+    width: 50%;
+  }
+  .g3 {
+    width: 75%;
+  }
+  .g4 {
+    width: 100%;
+  }
+  .g5 {
+    width: 100%;
+  }
+  .g6 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .g1 {
+    width: 20%;
+  }
+  .g2 {
+    width: 40%;
+  }
+  .g3 {
+    width: 60%;
+  }
+  .g4 {
+    width: 80%;
+  }
+  .g5 {
+    width: 100%;
+  }
+  .g6 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .g1 {
+    width: 16.66667%;
+  }
+  .g2 {
+    width: 33.33333%;
+  }
+  .g3 {
+    width: 50%;
+  }
+  .g4 {
+    width: 66.66667%;
+  }
+  .g5 {
+    width: 83.33333%;
+  }
+  .g6 {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=grid.css.map */

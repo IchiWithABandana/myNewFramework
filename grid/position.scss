@@ -1,0 +1,38 @@
+@media (min-width:0px){
+    .relative{
+        position: relative;
+    }
+    .absolute{
+        position: absolute;
+    }
+    .fixed{
+        position: fixed;
+    }
+    @for $i from 0 through 100 {
+        .t#{$i}{
+            top: $i+vh;
+        }
+        .r#{$i}{
+            right: $i+vh;
+        }
+        .b#{$i}{
+            bottom: $i+vh;
+        }
+        .l#{$i}{
+            left: $i+vh;
+        }
+    }
+    
+}
+@media (min-width:576px){
+    
+}
+@media (min-width:768px){
+    
+}
+@media (min-width:992px){
+    
+}
+@media (min-width:1200px){
+    
+}

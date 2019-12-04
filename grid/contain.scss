@@ -1,0 +1,30 @@
+@media (min-width:0px){
+    @for $i from 1 through 10 {
+        @for $x from 1 through 10 {
+            .cont-#{$i}-#{$x}{
+                padding: $i + vh $x + vw;
+            }
+        }
+        
+    }
+    
+}
+@media (min-width:576px){
+    
+}
+@media (min-width:768px){
+    
+}
+@media (min-width:992px){
+    @for $i from 1 through 10 {
+        @for $x from 1 through 10 {
+            .cont-#{$i}-#{$x}{
+                padding: ($i*.6) + vh ($x*.6) + vw;
+            }
+        }
+        
+    }
+}
+@media (min-width:1200px){
+    
+}

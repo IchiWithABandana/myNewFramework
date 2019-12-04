@@ -1,0 +1,55 @@
+@media (min-width:0px){
+    @for $i from 1 through 2 {
+        .g#{$i}{
+            width: percentage($i/2);
+        }
+    }
+    @for $i from 3 through 6 {
+        .g#{$i}{
+            width: 100%;
+        }
+    }
+}
+@media (min-width:576px){
+    @for $i from 1 through 3 {
+        .g#{$i}{
+            width: percentage($i/3);
+        }
+    }
+    @for $i from 4 through 6 {
+        .g#{$i}{
+            width: 100%;
+        }
+    }
+}
+@media (min-width:768px){
+    @for $i from 1 through 4 {
+        .g#{$i}{
+            width: percentage($i/4);
+        }
+    }
+    @for $i from 5 through 6 {
+        .g#{$i}{
+            width: 100%;
+        }
+    }
+}
+@media (min-width:992px){
+    @for $i from 1 through 5 {
+        .g#{$i}{
+            width: percentage($i/5);
+        }
+    }
+    @for $i from 6 through 6 {
+        .g#{$i}{
+            width: 100%;
+        }
+    }
+}
+@media (min-width:1200px){
+    @for $i from 1 through 6 {
+        .g#{$i}{
+            width: percentage($i/6);
+        }
+    }
+}
