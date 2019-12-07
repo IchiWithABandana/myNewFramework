@@ -6,4 +6,13 @@
 .row{
     display: flex;
     flex-flow: wrap row;
+    &.between{
+        justify-content: space-between;
+    }
+    &.around{
+        justify-content: space-around;
+    }
+    &.center{
+        justify-content: center;
+    }
 }

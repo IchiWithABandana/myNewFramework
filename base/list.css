@@ -1,0 +1,37 @@
+nav {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: white;
+}
+
+nav li {
+  text-transform: uppercase;
+}
+
+ul, ol, dl {
+  list-style: none;
+  -webkit-box-shadow: rgba(50, 49, 51, 0.1) 0 0 5px 0.1px;
+          box-shadow: rgba(50, 49, 51, 0.1) 0 0 5px 0.1px;
+}
+
+ul li, ul dt, ul dd, ol li, ol dt, ol dd, dl li, dl dt, dl dd {
+  padding: 1vh 1vw;
+}
+
+ul li a, ul dt a, ul dd a, ol li a, ol dt a, ol dd a, dl li a, dl dt a, dl dd a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul li:hover, ul dt:hover, ul dd:hover, ol li:hover, ol dt:hover, ol dd:hover, dl li:hover, dl dt:hover, dl dd:hover {
+  background-color: rgba(50, 49, 51, 0.1);
+}
+
+ul dt, ol dt, dl dt {
+  background-color: rgba(50, 49, 51, 0.2);
+}
+/*# sourceMappingURL=list.css.map */

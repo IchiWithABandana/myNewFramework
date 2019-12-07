@@ -1,0 +1,33 @@
+@charset 'utf-8';
+@import 'basic';
+@import 'defenitions';
+@import 'table';
+@import 'list';
+@import 'form';
+
+// SCROLLBAR
+/* width */
+::-webkit-scrollbar {
+    width: .5vw;
+}
+/* Track */
+::-webkit-scrollbar-track {
+background: #323133;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: dodgerblue;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: rgb(28, 124, 219);
+}
+
+// PRINT URLS
+@media print {
+    a::after{
+      content: " (" attr(href) ") ";
+    }
+  }

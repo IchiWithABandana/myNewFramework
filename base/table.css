@@ -1,0 +1,42 @@
+table {
+  width: 100%;
+  padding: 1vh 1vw;
+  margin-bottom: 0;
+  background-color: transparent;
+  border: rgba(50, 49, 51, 0.1) 1px solid;
+  -webkit-box-shadow: rgba(50, 49, 51, 0.1) 0 0 5px 0.1px;
+          box-shadow: rgba(50, 49, 51, 0.1) 0 0 5px 0.1px;
+  text-align: center;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+table col, table th, table td {
+  min-width: 20%;
+}
+
+table thead tr {
+  color: #323133;
+  -webkit-box-shadow: rgba(50, 49, 51, 0.1) 0 0 5px 0.1px;
+          box-shadow: rgba(50, 49, 51, 0.1) 0 0 5px 0.1px;
+  padding: 1vh 0;
+}
+
+table thead tr th {
+  padding: .5vh 0;
+}
+
+table tbody tr {
+  border: rgba(50, 49, 51, 0.1) 1px solid;
+}
+
+table tbody td {
+  border: rgba(50, 49, 51, 0.1) 1px solid;
+}
+
+table tbody td:hover {
+  background-color: rgba(50, 49, 51, 0.1);
+  -webkit-box-shadow: rgba(50, 49, 51, 0.1) 0 0 5px 0.1px;
+          box-shadow: rgba(50, 49, 51, 0.1) 0 0 5px 0.1px;
+}
+/*# sourceMappingURL=table.css.map */

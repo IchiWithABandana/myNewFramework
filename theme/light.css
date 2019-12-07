@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600,800|Oswald&display=swap);
+.light {
+  font-family: "Open Sans", sans-serif;
+  color: #323133;
+}
+
+.light .color-pri {
+  color: #323133;
+}
+
+.light .color-pri-hov:hover {
+  background-color: rgba(50, 49, 51, 0.1);
+}
+
+.light .bg-pri {
+  background-color: #323133;
+}
+
+.light .color-sec {
+  color: #2e3533;
+}
+
+.light .color-sec-hov:hover {
+  background-color: rgba(46, 53, 51, 0.1);
+}
+
+.light .bg-sec {
+  background-color: #2e3533;
+}
+
+.light .color-w {
+  color: white;
+}
+
+.light .color-w-hov:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.light .bg-w {
+  background-color: white;
+}
+
+.light .color-b {
+  color: black;
+}
+
+.light .color-b-hov:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.light .bg-b {
+  background-color: black;
+}
+
+.light .fpri {
+  font-family: "Open Sans";
+}
+
+.light .fsec {
+  font-family: "Oswald";
+}
+/*# sourceMappingURL=light.css.map */

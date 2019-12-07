@@ -1,0 +1,25 @@
+nav{
+    width: max-content;
+    height: max-content;
+    background-color: white;
+    li{
+        text-transform: uppercase;
+    }
+}
+ul,ol,dl{
+    list-style: none;
+    box-shadow: rgba(#323133, .1) 0 0 5px .1px;
+    li,dt,dd{
+        padding: 1vh 1vw;
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+        &:hover{
+            background-color:rgba(#323133, .1);
+        }
+    }
+    dt{
+        background-color:rgba(#323133, .2);
+    }
+}

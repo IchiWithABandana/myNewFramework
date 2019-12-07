@@ -1,0 +1,190 @@
+  //   ---------------------------------  //
+  form{
+    *{
+        padding: 1vh 0;
+    }
+    input[required] + label::before, .required::before{
+        content: '*';
+        color: red;
+        padding: 0 .5vw;
+    }
+    fieldset{
+        text-align: center;
+        border: none;
+        &.border{
+            border: #323133 .1px solid;
+        }
+        legend{
+            padding: 1vh 2vw;
+            &:hover{
+                background-color: rgba(153, 153, 153,.1);
+            }
+        }
+    }
+    input, label{
+        margin: 1vh 1vw;
+    }
+    input{
+        appearance: none;
+        padding: 1vh .6vw;
+        font-size: 1rem;
+        font-family: inherit;
+        border: rgba(153, 153, 153,.1) solid .4px;
+        box-shadow: rgba(153, 153, 153,.1) 0 0 10px .1px;
+        background-color: rgba(153, 153, 153,.1);
+        // AUTOFILL
+        &:-webkit-autofill {
+            background: #323133;
+            color: white;
+            border-radius: .6vw;
+        }
+        // MESSAGE
+        &::-webkit-validation-bubble-message {
+            color: #eee;
+            background: #000;
+            border-color: #444;
+            box-shadow: 4px 4px 4px rgba(100,100,100,0.5);
+        }
+        
+        &::-webkit-validation-bubble-message:before {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin-right: 4px;
+            background: url(http://trac.webkit.org/export/90202/trunk/Source/WebCore/inspector/front-end/Images/errorMediumIcon.png)
+        }
+        
+        &::-webkit-validation-bubble-arrow {
+            background: #000;
+            border-color: #444;
+            box-shadow: 0 0 0 0;
+        }
+        // FILE
+        &[type=file]{
+            display: none;
+            appearance: button;
+            &::before{
+                content: url('img/cloud_download-24px.svg');
+            }
+            & + label{
+                color: white;
+                background-color: #323133;
+                font-family: inherit;
+                padding: 1vh 2vw;
+                i{
+                    padding-right: 1vw;
+                }
+                &:hover{
+                    background-color: rgba(50, 49, 51, .9);
+
+                }
+            }
+        }
+        // RADIO
+        &[type=radio]{
+            display: none;
+            & + label{
+                color: white;
+                background-color: #323133;
+                border-radius: .6vw;
+                padding: 1vh 1vw;
+            }
+            &:checked + label{
+                color: #323133;
+                background-color: white;
+                border: rgba(30, 144, 255, .7) .6px solid;
+            }
+        }
+        // RANGE
+        &[type=range]::-webkit-slider-runnable-track{
+            background-color: rgba(50, 49, 51, .1);
+            height: 2vh;
+            border-radius: .6vw;
+        }
+        &[type=range]::-webkit-slider-thumb{
+            appearance: none;
+            height: 3vh;
+            width: 1vw;
+            background: dodgerblue;
+            border-radius: .6vw;
+            position: relative;
+            top: -.5vh;
+        }
+        // SEARCH
+        &[type=search]::-webkit-search-cancel-button{
+            appearance: none;
+            height: 1.5vh;
+            width: 1.5vh;
+            border: rgba(50, 49, 51, .1) .1px solid;
+            background-color: rgba(167, 23, 23, 0.5);
+            border-radius: 50%;
+        }
+        // COLOR
+        &[type=color] {
+            border: none;
+            width: 20vw;
+            height: 3vh;
+            margin: 1vh 1vw;
+
+        }
+        &[type=color]::-webkit-color-swatch-wrapper {
+            padding: 0;
+        }
+        &[type=color]::-webkit-color-swatch {
+            border: 1px rgba(153, 153, 153,.2) solid;
+        }
+        // CHECKBOX 
+        &[type=checkbox] + label{
+            display: block;
+        }
+        &[type=checkbox]{
+            display: none;
+        }
+        &[type=checkbox] + label:before{
+            content: '\2714';
+            border: .1vw solid rgba(161, 43, 72, .5);
+            border-radius: .2vw;
+            font-size: .5em;
+            padding: .2vh .5vh;
+            margin: 1vh 1vw;
+            position: relative;
+            bottom: .5vh;
+            color: transparent;
+        }
+        &[type=checkbox]:checked + label:before{
+            color: white;
+            background-color: rgba(161, 43, 72, 1);
+        }
+        // NUMBER small arows
+        &::-webkit-inner-spin-button, &::-webkit-outer-spin-button{
+            appearance: none;
+        }
+    }
+    textarea, output{
+        appearance: none;
+        padding: 1vh .6vw;
+        font-size: 1rem;
+        font-family: inherit;
+        border: rgba(153, 153, 153,.1) solid .4px;
+        box-shadow: rgba(153, 153, 153,.1) 0 0 10px .1px;
+    }
+    button{
+        appearance: none;
+        background-color: #323133;
+        color: white;
+        padding: 1vh .6vw;
+        margin: 1vh .6vw;
+        font-size: 1rem;
+        height: fit-content;
+        width: fit-content;
+    }
+    select{
+        appearance: none;
+        padding: 1vh .6vw;
+        font-size: 1rem;
+        font-family: inherit;
+        border: rgba(153, 153, 153,.5) solid 1px;
+        box-shadow: rgba(153, 153, 153,.1) 0 0 10px .1px;
+    }
+}

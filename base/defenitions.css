@@ -1,0 +1,203 @@
+abbr {
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(50, 49, 51, 0.1);
+          text-decoration-color: rgba(50, 49, 51, 0.1);
+  -webkit-text-decoration-style: dashed;
+          text-decoration-style: dashed;
+  position: relative;
+}
+
+abbr:hover {
+  background-color: rgba(50, 49, 51, 0.1);
+}
+
+abbr:before {
+  content: attr(title);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #323133;
+  color: white;
+  border-radius: .5vw;
+  padding: 0 .5vw;
+  margin: .5vh 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: none;
+}
+
+abbr:hover:before {
+  display: initial;
+}
+
+address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  padding: 1vh .6vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+address:hover {
+  background-color: rgba(50, 49, 51, 0.1);
+}
+
+code {
+  color: white;
+  border-radius: .5vw;
+  background-color: #323133;
+  padding: 0 .5vw;
+  margin: .5vh 0;
+}
+
+mark {
+  background-color: rgba(50, 49, 51, 0.1);
+  padding: 0 .5vw;
+}
+
+mark:hover {
+  background-color: rgba(50, 49, 51, 0.2);
+}
+
+blockquote {
+  font-style: italic;
+  position: relative;
+  margin: 2vh 0;
+}
+
+blockquote::before {
+  content: "from: " attr(cite);
+  position: absolute;
+  font-size: .5rem;
+  bottom: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+blockquote::after {
+  content: "- " attr(data-quote);
+  position: absolute;
+  top: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+q {
+  font-style: italic;
+  position: relative;
+  margin: 2vh 0;
+}
+
+i {
+  position: relative;
+  top: .5vh;
+}
+
+meter {
+  height: 1vh;
+  width: 50%;
+  margin: 0 auto;
+}
+
+meter::-webkit-meter-bar {
+  width: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(transparent, #323122), color-stop(transparent, #4b492f));
+  background-image: linear-gradient(90deg, #323122 transparent, #4b492f transparent);
+}
+
+meter::-webkit-meter-optimum-value {
+  -webkit-box-shadow: 0 5px 5px -5px #999 inset;
+          box-shadow: 0 5px 5px -5px #999 inset;
+  background-image: -webkit-gradient(linear, left top, right top, from(#86263e), to(#a02a47));
+  background-image: linear-gradient(90deg, #86263e, #a02a47);
+  background-size: 100% 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+meter::-webkit-meter-suboptimum-value {
+  background-image: -webkit-gradient(linear, left top, right top, from(#5b2686), to(#86265e));
+  background-image: linear-gradient(90deg, #5b2686, #86265e);
+}
+
+progress {
+  border-radius: 2px;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  width: 100%;
+}
+
+progress:not([value]) {
+  background-color: #86265e;
+  border-radius: 2px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 5px 0.1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px 0.1px rgba(0, 0, 0, 0.25);
+}
+
+progress[value]::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(-45deg, #86265e, #491b36), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25));
+}
+
+kbd {
+  color: white;
+  border-radius: .1vw;
+  background-color: #323133;
+  padding: 0 1vw;
+  margin: 1vh .5vw;
+}
+
+time {
+  color: dodgerblue;
+  position: relative;
+}
+
+time::before {
+  content: attr(datetime);
+  font-weight: 300;
+  display: none;
+  color: black;
+  position: absolute;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  top: 100%;
+  background-color: black;
+  color: white;
+  padding: 0 .5vw;
+}
+
+time:hover::before {
+  display: initial;
+}
+
+cite {
+  position: relative;
+}
+
+cite:after {
+  content: 'CITATION';
+  display: none;
+}
+
+b, u, em, strong, bdo, bdi, dfn, em, del, i, ins, pre, s, small, samp, sub, sup, template {
+  font-size: initial;
+}
+/*# sourceMappingURL=defenitions.css.map */

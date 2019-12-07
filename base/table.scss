@@ -1,0 +1,36 @@
+table{
+    width: 100%;
+    padding: 1vh 1vw;
+    margin-bottom: 0;
+    background-color: transparent;
+    border: rgba(#323133, .1) 1px solid;
+    box-shadow: rgba(#323133, .1) 0 0 5px .1px;
+    text-align: center;
+    border-collapse: collapse;
+    overflow-x: auto;
+    col,th,td{
+        min-width: 20%;
+    }
+    thead{
+        tr{
+            color: #323133;
+            box-shadow: rgba(#323133, .1) 0 0 5px .1px;
+            padding: 1vh 0;
+            th{
+                padding: .5vh 0;
+            }
+        }
+    }
+    tbody{
+        tr{
+            border: rgba(#323133, .1) 1px solid;
+        }
+        td{
+            border: rgba(#323133, .1) 1px solid;
+            &:hover{
+                background-color: rgba(#323133, .1);
+                box-shadow: rgba(#323133, .1) 0 0 5px .1px;
+            }
+        }
+    }
+}

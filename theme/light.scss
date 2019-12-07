@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600,800|Oswald&display=swap);
+// ------------------------------------------- 
+$colors:(
+    pri:#323133,
+    sec:#2e3533,
+
+    w: white,
+    b: black
+);
+
+$cpri: #323133;
+$csec: #2e3533;
+// ------------------------------------------- 
+$fonts:(
+    pri: 'Open Sans',
+    sec: 'Oswald'
+);
+
+$fpri: 'Open Sans', sans-serif;
+$fsec: 'Oswald', sans-serif;
+// ------------------------------------------- 
+.light{
+    font-family: $fpri;
+    color: $cpri;
+    @each $var,$val in $colors {
+        .color-#{$var}{
+            color: #{$val};
+            &-hov:hover{
+                background-color: rgba($val, .1);
+            }
+        }
+        .bg-#{$var}{
+            background-color: #{$val};
+        }
+        
+    }
+    @each $var,$val in $fonts{
+        .f#{$var}{
+            font-family: $val;
+        }
+    }
+}
+// ------------------------------------------- 

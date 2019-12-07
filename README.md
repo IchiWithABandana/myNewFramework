@@ -37,4 +37,10 @@ The grid system will contain:
 
      To make this possible we set all elements with a bos-sizing of border-box.
 
-The second part of our framework is the themes, it is fairly usefull to make it now so the construction of our framework does not lack of consistency and visual effects. The themes must be seperated from the main content and added just before all other elements. The theme consists of fonts, colors 
+The second part of our framework is the themes, it is fairly usefull to make it now so the construction of our framework does not lack of consistency and visual effects. The themes must be seperated from the main content and added just before all other elements. The theme consists of fonts, colors
+
++ Our themes are composed with two main elements: Colors and Fonts. The themes will be developped afterwords when the rest of the documents are set to be working, the current light theme will display the usual elements.
+
++ The Elements that we create are all set for the light theme. We have the list elements grouping also the navigation that is totally manipulated by the positioning and cont/wrap combo. It is good looking and very useful. We also have a second element in this section regarding the Tables that allows a similar but authentic feeling.
+
++ Now we have the form elements: The file uploding files comes with easier set ups allowing better understanding and customizable buttons. All other elements that have displayable styles such as select | input:number and others all have different styling reagarding their usability. It is all set to be a little part of the framework so it is very Light. The Scrollbars are also taken care of to allow perfect layout and branding customization.
